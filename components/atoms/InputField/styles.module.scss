@@ -1,0 +1,43 @@
+.inputField {
+  width: 100%;
+  background: var(--opacityGray);
+  border: none;
+  height: 5.9rem;
+  border-radius: 0.6rem;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 3.2rem;
+  color: var(--gray);
+  padding-left: 2rem;
+
+  &--error {
+    border: 0.1rem solid var(--red);
+  }
+}
+
+.checkbox {
+  display: flex;
+  height: 2rem;
+  width: 2rem;
+  background: var(--white);
+  border: 0.2rem var(--veryLightGray) solid;
+  border-radius: 0.3rem;
+
+  &:focus + & {
+    outline: 0.5rem solid var(--blue);
+  }
+}
+
+.checkbox__active {
+  width: 2rem;
+  height: 2rem;
+  display: flex;
+  border-radius: 0.3rem;
+  border-color: var(--pink);
+  background-color: var(--pink);
+
+  &:focus + & {
+    outline: 0.5rem solid var(--blue);
+  }
+}

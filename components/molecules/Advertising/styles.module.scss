@@ -1,0 +1,41 @@
+.advertising {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: var(--blue);
+  height: 68.8rem;
+  margin: 0 auto;
+  gap: 3.7rem;
+  color: var(--white);
+  padding: 5.2rem 3rem;
+
+  @media screen and (min-width: 1024px) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-content: center;
+    justify-items: start;
+    height: 60rem;
+    padding: 7rem;
+  }
+
+  @media screen and (min-width: 1440px) {
+    padding: 8rem;
+    height: 49.6rem;
+  }
+
+  &__image {
+    width: 27rem;
+    height: 27rem;
+    @media screen and (min-width: 1024px) {
+      grid-area: 1 / 2 / 3 / 3;
+      width: 32rem;
+      height: 32rem;
+      margin: 0 auto;
+    }
+    @media screen and (min-width: 1440px) {
+      width: 44.4rem;
+      height: 43.2rem;
+    }
+  }
+}

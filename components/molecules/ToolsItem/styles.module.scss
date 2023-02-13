@@ -1,0 +1,25 @@
+.toolsItem {
+  display: flex;
+  flex-direction: column;
+  word-wrap: break-word;
+  margin: 4.7rem;
+
+  &__content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 3.5rem;
+    padding-bottom: 0.8rem;
+  }
+
+  @media screen and (max-width: 768px) {
+    width: fit-content;
+    display: flex;
+    align-items: flex-start;
+  }
+
+  @media screen and (min-width: 1024px) {
+    font-size: 1.7rem;
+    width: fit-content;
+  }
+}

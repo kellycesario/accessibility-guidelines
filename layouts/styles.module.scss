@@ -1,0 +1,38 @@
+.layout {
+  margin: 0 auto;
+
+  &__link {
+    font-size: 1.6rem;
+    position: absolute;
+    left: -9999px;
+    z-index: 999;
+    padding: 1em;
+    background-color: var(--black);
+    color: var(--white);
+    opacity: 0;
+
+    @media screen and (min-width: 1024px) {
+      font-size: 2rem;
+    }
+
+    &:focus {
+      left: 50%;
+      transform: translateX(-50%);
+      opacity: 1;
+    }
+  }
+
+  &__children {
+    max-width: var(--max-width);
+    margin: 0 auto 8rem;
+    padding: 0 1.8rem;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10rem;
+
+    @media screen and (min-width: 1440px) {
+      padding: 0 8rem;
+      margin: 0 auto 10rem;
+    }
+  }
+}

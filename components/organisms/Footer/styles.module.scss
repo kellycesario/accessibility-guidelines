@@ -1,0 +1,26 @@
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.4rem;
+  margin: 0 auto;
+  padding: 4.2rem 2.3rem;
+  max-width: var(--max-width);
+  border-top: 0.1rem solid var(--darkGray);
+
+  @media screen and (min-width: 1024px) {
+    flex-direction: row;
+  }
+
+  &__divider {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 3.2rem;
+    display: none;
+    @media screen and (min-width: 1024px) {
+      display: block;
+    }
+  }
+}

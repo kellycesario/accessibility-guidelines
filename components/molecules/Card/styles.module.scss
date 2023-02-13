@@ -1,0 +1,44 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  color: var(--darkGray);
+  padding: 2rem;
+  gap: 2.1rem;
+  background-color: var(--white);
+  border: var(--darkGray);
+  border-radius: 0.6rem;
+  box-shadow: 0 0.4rem 0.8rem 0 var(--black-02);
+  height: 100%;
+
+  @media screen and (min-width: 1440px) {
+    padding: 2.5rem;
+  }
+
+  &:hover {
+    box-shadow: 0 1.6rem 3.2rem 0 var(--black-02);
+  }
+
+  &__image {
+    width: 100%;
+    min-height: 18.3rem;
+    max-height: 33.6rem;
+    mix-blend-mode: normal;
+    border-radius: 0.8rem;
+    align-self: center;
+    opacity: 0.9;
+    object-fit: cover;
+
+    &:hover {
+      opacity: 1;
+      transition: 2s ease-in-out;
+      -webkit-transition: 2s ease-out;
+    }
+  }
+
+  &__link {
+    grid-column: 1/-1;
+    grid-row: 1/2;
+    width: 100%;
+  }
+}

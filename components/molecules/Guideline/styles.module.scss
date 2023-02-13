@@ -1,0 +1,45 @@
+.guideline {
+  display: flex;
+  gap: 1.6rem;
+  border: 0.1rem solid var(--black-02);
+  border-radius: 1rem;
+  padding: 2.6rem 4rem;
+  cursor: pointer;
+  margin: 0;
+  height: 100%;
+  background-color: var(--white);
+  filter: drop-shadow(0rem 0.4rem 0.4rem var(--black-02));
+
+  &:hover {
+    filter: drop-shadow(0rem 0.1rem 0.1rem var(--black-02));
+  }
+
+  &__image {
+    display: none;
+  }
+}
+
+.guideline__mt {
+  border: 0.1rem solid var(--pink);
+}
+
+.guideline--grid {
+  flex-direction: column;
+}
+
+.guideline--list {
+  flex-direction: row;
+  align-items: center;
+}
+
+.guideline__image {
+  display: flex;
+  align-self: center;
+  width: 100%;
+  border-radius: 0.6rem;
+  height: 12.3rem;
+
+  @media screen and (min-width: 1024px) {
+    height: 15.7rem;
+  }
+}

@@ -1,0 +1,23 @@
+.cards {
+  display: grid;
+  justify-items: center;
+  grid-row-gap: 5rem;
+  grid-template-columns: repeat(auto-fit, minmax(34rem, 62rem));
+  width: 100%;
+  justify-content: center;
+  margin-top: 5rem;
+  @media screen and (min-width: 768px) {
+    grid-template-columns: repeat(2, auto);
+    grid-column-gap: 3rem;
+    grid-row-gap: 3rem;
+  }
+  @media screen and (min-width: 1024px) {
+    grid-column-gap: 4rem;
+    grid-row-gap: 4rem;
+    margin-top: 10rem;
+  }
+  @media screen and (min-width: 1441px) {
+    grid-column-gap: 5.5rem;
+    grid-row-gap: 5.5rem;
+  }
+}

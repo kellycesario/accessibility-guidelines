@@ -1,0 +1,30 @@
+.printer__button {
+  background: var(--ice);
+  cursor: pointer;
+  border: none;
+  border-radius: 50%;
+  position: fixed;
+  right: 1rem;
+  bottom: 2rem;
+  z-index: 1;
+  box-shadow: 0rem 0.4rem 0.4rem var(--black-0-25);
+  opacity: 0.8;
+  stroke: var(--black);
+  padding: 1rem;
+  transition: all 0.3s;
+  height: 6.7rem;
+
+  &:hover {
+    background: var(--pink);
+    color: var(--white);
+    transition: all 0.3s;
+    opacity: 0.9;
+    stroke: var(--white);
+  }
+
+  @media screen and (min-width: 1024px) {
+    right: 12rem;
+    font-size: 2.5rem;
+    display: inline;
+  }
+}

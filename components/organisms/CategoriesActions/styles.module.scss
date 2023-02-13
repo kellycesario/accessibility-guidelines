@@ -1,0 +1,20 @@
+.categoriesActions {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin: 6rem auto;
+  flex-direction: column;
+  max-width: 34rem;
+  width: 100%;
+  row-gap: 3rem;
+
+  @media screen and (min-width: 768px) {
+    flex-direction: row;
+    align-items: center;
+    max-width: none;
+  }
+
+  @media screen and (min-width: 1024px) {
+    margin: 6.5rem auto;
+  }
+}

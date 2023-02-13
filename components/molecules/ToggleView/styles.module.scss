@@ -1,0 +1,50 @@
+.viewType {
+  display: flex;
+  flex-direction: row;
+  border: 0.1rem solid transparent;
+  border-radius: 0.6rem;
+  max-width: 17.8rem;
+}
+.viewType__button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+  padding: 1.2rem 1.8rem;
+  border: none;
+  background-color: var(--opacityGray);
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+
+  &:first-of-type {
+    border-top-left-radius: 0.6rem;
+    border-bottom-left-radius: 0.6rem;
+  }
+  &:last-of-type {
+    border-top-right-radius: 0.6rem;
+    border-bottom-right-radius: 0.6rem;
+  }
+}
+.viewType__button--active {
+  background-color: var(--pink);
+  color: var(--white);
+}
+
+.grid {
+  stroke: var(--black);
+}
+
+.grid--active {
+  stroke: var(--white);
+}
+
+.list {
+  stroke: var(--black);
+}
+
+.list--active {
+  stroke: var(--white);
+  fill: var(--white);
+}

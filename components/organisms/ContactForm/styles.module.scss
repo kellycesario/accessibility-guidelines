@@ -1,0 +1,58 @@
+.contactForm {
+  display: grid;
+  margin-top: 5rem;
+  row-gap: 3.5rem;
+
+  @media screen and (min-width: 1024px) {
+    margin-top: 10rem;
+  }
+
+  &__fieldset {
+    display: grid;
+    row-gap: 2rem;
+    border: none;
+
+    &:nth-child(2) {
+      margin-top: 5rem;
+    }
+
+    @media screen and (min-width: 1024px) {
+      display: grid;
+      grid-template-columns: 1fr 4fr;
+      align-items: center;
+      margin: 1.75rem 0;
+      gap: 2rem;
+
+      &:nth-child(7) {
+        align-items: start;
+      }
+    }
+  }
+
+  &__tags {
+    display: grid;
+    justify-items: baseline;
+    grid-template-columns: repeat(auto-fit, minmax(12rem, 12rem));
+    row-gap: 4rem;
+    column-gap: 5rem;
+
+    @media screen and (min-width: 768px) {
+      grid-template-columns: repeat(4, 0fr);
+    }
+    @media screen and (min-width: 1024px) {
+    }
+  }
+
+  &__button {
+    @media screen and (min-width: 1024px) {
+      display: grid;
+      justify-items: end;
+    }
+  }
+
+  &__error {
+    font-size: 1.6rem;
+    grid-column: 2 /-1;
+    color: var(--red);
+  }
+}

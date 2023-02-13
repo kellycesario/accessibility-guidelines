@@ -1,0 +1,18 @@
+.filter {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+
+  @media screen and (min-width: 768px) {
+    justify-content: flex-start;
+  }
+
+  &__list {
+    display: none;
+
+    @media screen and (min-width: 1024px) {
+      display: flex;
+      column-gap: 3rem;
+    }
+  }
+}

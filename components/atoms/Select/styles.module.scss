@@ -1,0 +1,29 @@
+.select {
+  display: block;
+  width: 100%;
+  max-width: 34rem;
+  border: 0.1rem solid var(--black);
+  border-radius: 0.6rem;
+  font-size: 1.6rem;
+  padding: 1.8rem 1.6rem;
+
+  &--filter {
+    @media screen and (min-width: 1024px) {
+      display: none;
+    }
+  }
+
+  &__bgGray {
+    background: var(--opacityGray);
+    border: none;
+    width: 100%;
+    max-width: none;
+    @media screen and (min-width: 1024px) {
+      max-width: 44rem;
+    }
+  }
+
+  &--error {
+    border: 0.1rem solid var(--red);
+  }
+}

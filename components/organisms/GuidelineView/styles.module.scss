@@ -1,0 +1,59 @@
+.guidelineView {
+  display: flex;
+  flex-direction: column;
+  row-gap: 5rem;
+  width: 100%;
+
+  @media print {
+    padding: 2em;
+  }
+
+  @media screen and (min-width: 1024px) {
+    row-gap: 6.6rem;
+  }
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    row-gap: 2rem;
+    width: 100%;
+
+    @media screen and (min-width: 1024px) {
+      row-gap: 4rem;
+    }
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(34rem, 100%));
+    row-gap: 3rem;
+    column-gap: 4rem;
+    justify-content: center;
+
+    @media screen and (min-width: 768px) {
+      grid-template-columns: repeat(auto-fit, minmax(34rem, 62rem));
+    }
+
+    @media screen and (min-width: 1024px) {
+      grid-template-columns: repeat(2, auto);
+    }
+
+    &--grid {
+      grid-template-columns: repeat(auto-fit, minmax(34rem, 40rem));
+      column-gap: 4rem;
+    }
+  }
+}
+
+@media print {
+  .page__break {
+    margin-top: 1rem;
+    display: block;
+    page-break-before: auto;
+  }
+}
+
+@page {
+  size: auto;
+  margin: 20mm;
+}
